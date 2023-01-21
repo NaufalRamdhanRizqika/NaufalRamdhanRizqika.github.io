@@ -1,0 +1,353 @@
+<html>
+<title>Tugas 13</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="../assets/css/w3.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+<body>
+
+    <body>
+        <div class="w3-container">
+            <img src="../assets/img/desain.png" width="100%">
+            <div class="w3-bar w3-blue-gray">
+                <button class="w3-bar-item w3-button" onclick="openKelas('Home')">
+                    <img src="https://cdn-icons-png.flaticon.com/512/60/60817.png" width="23">
+                </button>
+                <button class="w3-bar-item w3-button" onclick="openKelas('if2')">Tentang IF 2</button>
+                <div class="w3-dropdown-hover w3-blue-gray">
+                    <button class="w3-button">Jadwal Kelas</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-blue-gray">
+                        <button class="w3-bar-item w3-button" onclick="openKelas('senin')">Senin</button>
+                        <button class="w3-bar-item w3-button" onclick="openKelas('selasa')">Selasa</button>
+                        <button class="w3-bar-item w3-button" onclick="openKelas('rabu')">Rabu</button>
+                        <button class="w3-bar-item w3-button" onclick="openKelas('kamis')">Kamis</button>
+                        <button class="w3-bar-item w3-button" onclick="openKelas('jumat')">Jum'at</button>
+                        <button class="w3-bar-item w3-button" onclick="openKelas('sabtu')">Sabtu</button>
+                    </div>
+                </div>
+                <button class="w3-bar-item w3-button" onclick="openKelas('Foto')">Foto</button>
+                <button class="w3-bar-item w3-button" onclick="openKelas('tentang')">About</button>
+            </div>
+
+            <div id="Home" class="w3-container kelas w3-animate-zoom" style="display: block;">
+                <br>
+                <center>
+                    <img src="../assets/img/if2.jpeg" style="width:20%">
+                    <p>
+                    <h3>Selamat datang di kelas Teknik Informatika 2</p>
+                </center>
+            </div>
+            <div id="if2" class="w3-container kelas w3-animate-fading" style="display:none">
+                <center>
+                    <h2>Tentang IF 2</h2>
+                    <img src="../assets/img/kom1.jpeg" style="width:45%">
+                </center>
+                <p>Halo semuanya! Kami mahasiswa IF'2 di Universitas Komputer Indonesia. kelas kami memiliki 43
+                    mahasiswa
+                    yang terdiri dari 4 anak perempuan dan 38 anak laki-laki dengan berbagai karakteristik.
+                    kami diterima di Universitas Komputer Indonesia pada tahun 2022.</p>
+            </div>
+            <div id="senin" class="w3-container kelas w3-animate-top" style="display: none;">
+                <center>
+                    <h1>
+                        Senin
+                    </h1>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>Mata Kuliah</td>
+                            <td>:</td>
+                            <td>Pemrograman Web 1 (2 SKS)</td>
+                        </tr>
+                        <tr>
+                            <td>Dosen</td>
+                            <td>:</td>
+                            <td>Taryana Suryana, ST., M.Kom</td>
+                        </tr>
+                        <tr>
+                            <td>Ruangan</td>
+                            <td>:</td>
+                            <td>LAB-7</td>
+                        </tr>
+                        <tr>
+                            <td>Waktu</td>
+                            <td>:</td>
+                            <td>08.40 - 10.20</td>
+                        </tr>
+                    </table>
+                    <hr>
+            </div>
+            </center>
+            <div id="selasa" class="w3-container kelas w3-animate-bottom" style="display: none;">
+                <center>
+                    <h1>
+                        Selasa
+                    </h1>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>Mata Kuliah</td>
+                            <td>:</td>
+                            <td>Algoritma dan Struktur Data 1 (4 SKS)</td>
+                        </tr>
+                        <tr>
+                            <td>Dosen</td>
+                            <td>:</td>
+                            <td>Tati Harihayati Mardzuki, S.T, M.T</td>
+                        </tr>
+                        <tr>
+                            <td>Ruangan</td>
+                            <td>:</td>
+                            <td>R5306</td>
+                        </tr>
+                        <tr>
+                            <td>Waktu</td>
+                            <td>:</td>
+                            <td>09.30 - 11.10</td>
+                        </tr>
+                        <th>
+                            <br>
+                            <tr>
+                                <td>Mata Kuliah</td>
+                                <td>:</td>
+                                <td>Algoritma dan Struktur Data 1 (4 SKS) (Praktikum)</td>
+                            </tr>
+                            <tr>
+                                <td>Dosen</td>
+                                <td>:</td>
+                                <td>Tati Harihayati Mardzuki, S.T, M.T</td>
+                            </tr>
+                            <tr>
+                                <td>Ruangan</td>
+                                <td>:</td>
+                                <td>6.009</td>
+                            </tr>
+                            <tr>
+                                <td>Waktu</td>
+                                <td>:</td>
+                                <td>14.30 - 16.10</td>
+                            </tr>
+                        </th>
+                    </table>
+                    <hr>
+            </div>
+            </center>
+            <div id="rabu" class="w3-container kelas w3-animate-right" style="display: none;">
+                <center>
+                    <h1>
+                        Rabu
+                    </h1>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>Mata Kuliah</td>
+                            <td>:</td>
+                            <td>Bahasa Inggris (2 SKS)</td>
+                        </tr>
+                        <tr>
+                            <td>Dosen</td>
+                            <td>:</td>
+                            <td>Ayu Pratiwi Ulfah, S.Hum.,M.Hum.</td>
+                        </tr>
+                        <tr>
+                            <td>Ruangan</td>
+                            <td>:</td>
+                            <td>R5605</td>
+                        </tr>
+                        <tr>
+                            <td>Waktu</td>
+                            <td>:</td>
+                            <td> 08.40 - 10.20</td>
+                        </tr>
+                        <th>
+                            <br>
+                            <tr>
+                                <td>Mata Kuliah</td>
+                                <td>:</td>
+                                <td>Matematika Sains Data 1 (3 SKS)</td>
+                            </tr>
+                            <tr>
+                                <td>Dosen</td>
+                                <td>:</td>
+                                <td>Kania Evita Dewi, S.Pd., M.Si</td>
+                            </tr>
+                            <tr>
+                                <td>Ruangan</td>
+                                <td>:</td>
+                                <td>R5506</td>
+                            </tr>
+                            <tr>
+                                <td>Waktu</td>
+                                <td>:</td>
+                                <td> 11.10 - 13.40</td>
+                            </tr>
+                        </th>
+                        <th>
+                            <br>
+                            <tr>
+                                <td>Mata Kuliah</td>
+                                <td>:</td>
+                                <td>Pengantar Sistem dan Teknologi Informasi (2 SKS)</td>
+                            </tr>
+                            <tr>
+                                <td>Dosen</td>
+                                <td>:</td>
+                                <td>Dr Nina Kurnia Hikmawati, SE.,MM.</td>
+                            </tr>
+                            <tr>
+                                <td>Ruangan</td>
+                                <td>:</td>
+                                <td>R5406</td>
+                            </tr>
+                            <tr>
+                                <td>Waktu</td>
+                                <td>:</td>
+                                <td> 13.40 - 15.20</td>
+                            </tr>
+                        </th>
+                    </table>
+                    <hr>
+            </div>
+            </center>
+            <div id="kamis" class="w3-container kelas w3-animate-left" style="display: none;">
+                <center>
+                    <h1>
+                        Kamis
+                    </h1>
+                    <br><br><br><br>
+                    <h2>TIDAK ADA KELAS</h2>
+                </center>
+            </div>
+            <div id="jumat" class="w3-container kelas w3-animate-zoom" style="display: none;">
+                <center>
+                    <h1>
+                        Jum'at
+                    </h1>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>Mata Kuliah</td>
+                            <td>:</td>
+                            <td>Logika Matematika (2 SKS)</td>
+                        </tr>
+                        <tr>
+                            <td>Dosen</td>
+                            <td>:</td>
+                            <td>Nelly Indriani Widiastuti, M.T.</td>
+                        </tr>
+                        <tr>
+                            <td>Ruangan</td>
+                            <td>:</td>
+                            <td>R5306</td>
+                        </tr>
+                        <tr>
+                            <td>Waktu</td>
+                            <td>:</td>
+                            <td> 09.30 s.d 11.10</td>
+                        </tr>
+                        <th>
+                            <br>
+                            <tr>
+                                <td>Mata Kuliah</td>
+                                <td>:</td>
+                                <td>Bahasa Indonesia (2 SKS)</td>
+                            </tr>
+                            <tr>
+                                <td>Dosen</td>
+                                <td>:</td>
+                                <td>Prof. Dr. Cece Sobarna, M.Hum</td>
+                            </tr>
+                            <tr>
+                                <td>Ruangan</td>
+                                <td>:</td>
+                                <td>R4607</td>
+                            </tr>
+                            <tr>
+                                <td>Waktu</td>
+                                <td>:</td>
+                                <td>14.30 - 16.10</td>
+                            </tr>
+                        </th>
+                    </table>
+                    <hr>
+            </div>
+            </center>
+        </div>
+        <div id="sabtu" class="w3-container kelas w3-animate-bottom" style="display: none;">
+            <center>
+                <h1>
+                    Sabtu
+                </h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Mata Kuliah</td>
+                        <td>:</td>
+                        <td>Pola Pikir Digital (2 SKS)</td>
+                    </tr>
+                    <tr>
+                        <td>Dosen</td>
+                        <td>:</td>
+                        <td>Dedeng Hirawan, S.Kom.,M.Kom.</td>
+                    </tr>
+                    <tr>
+                        <td>Ruangan</td>
+                        <td>:</td>
+                        <td>R5306</td>
+                    </tr>
+                    <tr>
+                        <td>Waktu</td>
+                        <td>:</td>
+                        <td>10.20 s.d 12.00</td>
+                    </tr>
+                </table>
+                <hr>
+        </div>
+        </center>
+        <div id="Foto" class="w3-container kelas w3-animate-zoom" style="display:none">
+            <center>
+                <h2>Foto</h2>
+                <tr>
+                    <td><img src="../assets/img/kom1.jpeg" style="width: 45%;"></td>
+                    <td><img src="../assets/img/kom2.jpeg" style="width: 45%;"></td>
+                    <td><img src="../assets/img/kom.jpeg" style="width:40%;"></td>
+                    <td><img src="../assets/img/futsal1.jpeg" style="width: 45%;"></td>
+                </tr>
+        </div>
+        </center>
+        <div id="tentang" class="w3-container kelas w3-animate-zoom" style="display:none">
+            <center>
+                <h2>Profile</h2>
+                <td><img src="../assets/img/mypoto.jpg" style="width: 10%;"></td>
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Naufal Ramdhan Rizqika</td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td>10122069</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas</td>
+                        <td>:</td>
+                        <td>IF-2</td>
+                    </tr>
+                </table>
+        </div>
+        </center>
+        <script>
+            function openKelas(Mykelas) {
+                var i;
+                var x = document.getElementsByClassName("kelas"); x
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                document.getElementById(Mykelas).style.display = "block";
+            }
+        </script>
+    </body>
+
+</html>
